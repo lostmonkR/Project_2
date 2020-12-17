@@ -5,3 +5,4 @@ Given: A seller should be presented with inputs name, food, address, and phone n
 When a buyer selects an item, the website will be refreshed with the SELECT statement from the DB.
 If buyer cancels order – items are returned to the database
 If buyer commits to buying a separate html file will be used for fake payment information.
+we will use html, dooedash API, javascript. 
