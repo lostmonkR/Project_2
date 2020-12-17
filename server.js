@@ -12,6 +12,7 @@ var router = express.Router();
 
 
 //CORS https://stackoverflow.com/questions/32500073/request-header-field-access-control-allow-headers-is-not-allowed-by-itself-in-pr
+//https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 router.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested")
