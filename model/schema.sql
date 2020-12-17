@@ -1,10 +1,10 @@
 -- Drops  --
-DROP DATABASE IF EXISTS FoodHub;
+DROP DATABASE IF EXISTS FoodHub_db;
 -- Creates  --
-CREATE DATABASE FoodHub;
+CREATE DATABASE FoodHub_db;
 
 
-USE FoodHub;
+USE FoodHub_db;
 
 -- TODO Create Tables --
 
@@ -27,7 +27,8 @@ Create TABLE seller(
     sAddress VARCHAR(200) NOT NULL,
     sCity VARCHAR(20) NOT NULL,
     sState VARCHAR(20) NOT NULL,
-    sCanDeliver BOOLEAN NOT NULL
+    sCanDeliver BOOLEAN NOT NULL,
+    cost DECIMAL(10,2)
 
 );
 
@@ -36,5 +37,6 @@ Create Table food_product(
     time_made VARCHAR(10) NOT NULL,
     f_portion_size DECIMAL(10,2) NOT NULL,
     f_calories INTEGER(1000) NOT NULL,
+    cost DECIMAL(10,2)
 )
 
