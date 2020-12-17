@@ -19,7 +19,6 @@ router.use(function(req, res, next) {
 })
 
 router.use(function(req, res, next){
-  //console.log('')
   console.log('\nReceived', {
     url: req.originalUrl,
     body: req.body,
