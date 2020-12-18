@@ -19,5 +19,8 @@
   "homepage": "https://github.com/lostmonkR/Project_2#readme",
   "dependencies": {
     "handlebars": "^4.7.6"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }
