@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lostmonkR/Project_2/issues"
   },
-  "homepage": "https://github.com/lostmonkR/Project_2#readme"
+  "homepage": "https://github.com/lostmonkR/Project_2#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  }
 }
