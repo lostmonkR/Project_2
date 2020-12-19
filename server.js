@@ -11,7 +11,9 @@ var port = process.env.PORT || 8080;
 const express = require('express');
 const sequelize = require('./config/connection');
 
-const Book = require('./models/Book');
+const Buyer = require('./model/buyer');
+const Seller = require('./model/seller');
+const Transaction = require('./model/transaction');
 
 const router = express();
 const PORT = process.env.PORT || 3001;
