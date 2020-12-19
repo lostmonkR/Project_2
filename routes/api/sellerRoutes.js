@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const seller = require('../../model/seller');
+const seller = require('/model/seller');
 
 // GET one seller
 router.get('/:sPhoneNumber', async (req, res) => {
@@ -9,7 +9,7 @@ router.get('/:sPhoneNumber', async (req, res) => {
       res.status(404).json({ message: 'No seller with this phone' });
       return;
     }
-    res.status(200).json(userData);
+    res.status(200).json(sellerPhoneNumber);
   } catch (err) {
     res.status(500).json(err);
   }
