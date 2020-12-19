@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
-class Seller extends Model{}
+class Seller extends Model { }
 
 Seller.init({
   sFname: {
@@ -37,10 +37,10 @@ Seller.init({
     allow_null: false,
   }
 },
-    {
-      sequelize,
-      timestamp: true,
-      underscored: true,
-      modelName: 'seller'
-    }
-});
+  {
+    sequelize,
+    timestamp: true,
+    underscored: true,
+    modelName: 'seller'
+  }
+);
