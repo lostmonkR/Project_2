@@ -1,4 +1,4 @@
-const Seller = require('./seller');
+const Seller = require('../../tdb-project-2/models/seller');
 const Customer = require('./customer');
 
 Seller.hasMany(Customer, {
