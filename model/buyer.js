@@ -44,5 +44,6 @@ Buyer.init({
       timestamp: true,
       underscored: true,
       modelName: 'buyer',
+      freezeTableName: true,
     }
 };
