@@ -41,6 +41,7 @@ Buyer.init({
     type: DataTypes.UUID,
     defaultValue: Sequelize.UUIDV4,
     primaryKey: true,
+    allow_null: false,
   }
     }),
     {
