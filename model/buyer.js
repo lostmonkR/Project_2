@@ -14,7 +14,7 @@ Buyer.init({
         allow_null: false,
       },
       bPhoneNumber: {
-        type: DataTypes.INTEGER(7).,
+        type: DataTypes.INTEGER(7),
         allow_null: false,
       },
       bAddress: {
@@ -37,13 +37,14 @@ Buyer.init({
         type: DataTypes.BOOLEAN,
         allow_null: false,
       },
-  bId: {
-    type: DataTypes.UUID,
-    defaultValue: Sequelize.UUIDV4,
-    primaryKey: true,
-    allow_null: false,
-  }
-    }),
+      bId: {
+        type: DataTypes.UUID,
+        defaultValue: Sequelize.UUIDV4,
+        primaryKey: true,
+        allow_null: false,
+        autoIncrement: false
+      }
+      }),
     {
       sequelize,
       timestamp: true,

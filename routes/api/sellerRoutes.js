@@ -4,7 +4,7 @@ const seller = require('/model/seller');
 // GET one seller
 router.get('/:sPhoneNumber', async (req, res) => {
   try {
-    const sellerPhoneNumber = await seller.findByPk(req.params.id);
+    const sellerPhoneNumber = await seller.findOne(req.params.id);
     if (!sellerPhoneNumber) {
       res.status(404).json({ message: 'No seller with this phone' });
       return;
@@ -23,6 +23,7 @@ router.post('/seller', async (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
+  throw new Error(err);
 });
 
 // POST user login

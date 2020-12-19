@@ -41,6 +41,7 @@ Seller.init({
     defaultValue: Sequelize.UUIDV4,
     primaryKey: true,
     allow_null: false,
+    autoIncrement: false,
   }
 },
     {
