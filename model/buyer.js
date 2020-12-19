@@ -36,11 +36,11 @@ Buyer.init({
         type: DataTypes.BOOLEAN,
         allow_null: false,
       }
-    },
+    }),
     {
       sequelize,
       timestamp: true,
       underscored: true,
       modelName: 'buyer',
-    },
-});
+    }
+};
