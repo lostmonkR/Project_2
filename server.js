@@ -32,7 +32,7 @@ router.use(function(req, res, next) {
   next()
 })
 
-
+//sequalize
 sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./config/connection');
 
 class Transaction extends Model{}
 
@@ -16,8 +17,6 @@ Transaction.init({
         allow_null: false,
         primaryKey: true,
       },
-      
-      
     },
     {
       sequelize,
