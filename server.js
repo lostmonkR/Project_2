@@ -7,6 +7,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }))
 ///server for the buyer
+const router2 = express();
 var PORT2 = process.env.PORT || 8080;
 const express = require('express');
 const sequelize = require('./config/connection');
@@ -25,6 +26,14 @@ app.use(express.urlencoded({ extended: true }));
 //CORS https://stackoverflow.com/questions/32500073/request-header-field-access-control-allow-headers-is-not-allowed-by-itself-in-pr
 //https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 router.use(function(req, res, next) {
+  res.writeHead(200,{
+    "Content-Type": 'application/json',
+    "Access-Control-Allow_Origin": "*",
+  });
+  next()
+})
+
+router2.use(function(req, res, next) {
   res.writeHead(200,{
     "Content-Type": 'application/json',
     "Access-Control-Allow_Origin": "*",
