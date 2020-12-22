@@ -2,7 +2,7 @@ const router = require('express').Router();
 const buyer = require('/model/buyer');
 
 // GET one buyer
-router.get('/:bPhoneNumber', async (req, res) => {
+router.get('/:buyer', async (req, res) => {
   try {
     const bPhoneNumberInfo = await buyer.findByPk(req.params.id);
     if (!bPhoneNumberInfo) {

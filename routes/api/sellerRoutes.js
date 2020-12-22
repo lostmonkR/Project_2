@@ -31,10 +31,11 @@ router.post('/seller', async (req, res) => {
 });
 
 // POST user login
-router.post('/login', async (req, res) => {
+router.post('/index', async (req, res) => {
   try {
     // First we find one user record with an email address that matches the one provided by the user logging in
-    const sellerData = await seller.findOne({ where: { email: req.body.email } });
+    const sellerData = await seller.findOne({ where:
+          { email: req.body.email } });
     // If an account with that email address doesn't exist, the user will recieve an error message
     if (!sellerData) {
       res

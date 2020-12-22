@@ -15,8 +15,16 @@ Transaction.init({
       tOrderNumber: {
         type: DataTypes.INTEGER(5),
         allow_null: false,
-        primaryKey: true,
       },
+      tId: {
+        type: DataTypes.UUID,
+        defaultValue: Sequelize.UUIDV4,
+        primaryKey: true,
+        allow_null: false,
+        autoIncrement: false
+      }
+  
+  
     },
     {
       sequelize,
