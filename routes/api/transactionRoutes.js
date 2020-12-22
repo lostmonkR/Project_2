@@ -108,7 +108,7 @@ router.delete('/:tId', withAuth, (req, res) => {
     }
   }).then(postData => {
     if (!postData) {
-      res.status(404).json({ message: 'No post found with this id' });
+      res.status(404).json({ message: 'No transaction found with this id' });
       return;
     }
     res.json(postData);
