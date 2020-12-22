@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2211096-d3c8-4d75-abcc-2b4c87e77233" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/sellerRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/sellerRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/buyer.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/buyer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +58,7 @@
       <workItem from="1608171533102" duration="14895000" />
       <workItem from="1608390493865" duration="20000" />
       <workItem from="1608392903165" duration="9589000" />
-      <workItem from="1608570223060" duration="190000" />
-      <workItem from="1608598033807" duration="240000" />
+      <workItem from="1608570223060" duration="690000" />
     </task>
     <servers />
   </component>

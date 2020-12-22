@@ -30,7 +30,7 @@ Buyer.init({
         allow_null: false,
       },
       bZip: {
-        type: DataTypes.VARCHAR(5),
+        type: DataTypes.INTEGER(5),
         allow_null: false,
       },
       bNeedsDelivered: {
