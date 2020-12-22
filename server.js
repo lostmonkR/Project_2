@@ -6,19 +6,23 @@ var app = express();
 app.use(bodyParser.urlencoded({
   extended: true
 }))
-///server for the buyer
+///buyer server
 const router2 = express();
 var PORT2 = process.env.PORT || 8080;
 const express = require('express');
 const sequelize = require('./config/connection');
 
 
-
+//seller server
 const router = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(express.json());
+const express2 = require('express');
+const sequelize2 = require('./config/connection');
+
+app.use(express.json() && express2.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express2.urlencoded({ extended: true }));
 
 
 
