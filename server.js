@@ -6,12 +6,12 @@ var app = express();
 app.use(bodyParser.urlencoded({
   extended: true
 }))
-
-var port = process.env.PORT || 8080;
+///server for the buyer
+var PORT2 = process.env.PORT || 8080;
 const express = require('express');
 const sequelize = require('./config/connection');
 
-const Book = require('./models/Book');
+
 
 const router = express();
 const PORT = process.env.PORT || 3001;
@@ -34,7 +34,8 @@ router.use(function(req, res, next) {
 
 //sequalize
 sequelize.sync({ force: true }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log('Now listening', PORN));
+  app.listen(PORT2, () => console.log('Now listening', PORT2));
 });
 
 
