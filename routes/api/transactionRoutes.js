@@ -3,7 +3,7 @@ const {Buyer, Seller} = require('../../models');
 const sequelize = require('../../config/connection');
 const withAuth = require('../utils/auth')
 
-router.get('/', (req, res) => {
+router.get('/', dateTimeObject, (req, res) => {
   Post.findAll({
         attributes: ['bId',
           'bName',
