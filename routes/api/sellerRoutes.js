@@ -1,15 +1,19 @@
 const router = require('express').Router();
 const seller = require('/model/seller');
 
-// GET one seller
-router.get('/:sPhoneNumber', async (req, res) => {
+// GET all sellers
+router.get('/:seller', async (req, res) => {
   try {
-    const sellerPhoneNumber = await seller.findOne(req.params.id);
-    if (!sellerPhoneNumber) {
-      res.status(404).json({ message: 'No seller with this phone' });
+    const sellerInfo = await seller.findAll(req.params.id);
+    if (!sellerInfo) {
+      res.status(404).json({
+        message: 'No seller found'
+      });
       return;
     }
-    res.status(200).json(sellerPhoneNumber);
+    res.status(200).json(sellerInfo,{
+      limit: 20
+    });
   } catch (err) {
     res.status(500).json(err);
   }
