@@ -23,8 +23,6 @@ Transaction.init({
         allow_null: false,
         autoIncrement: false
       }
-  
-  
     },
     {
       sequelize,
