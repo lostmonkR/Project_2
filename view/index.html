@@ -1,22 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE HTML>
+<html>
 <head>
-  <<script type="text/javascript" src="jquery.cycle.js"></script>
-  
-  
-  <script type="text/javascript">
-    $(document).ready(() => {
-      console.log("Ready!");
-    })
-  </script>
-  
- 
-  
-  
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <title>Dinner night</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
+<div class="header">
+
+    <div class="dl-title">
+        <!--<img src="/chinapost/Public/assets/img/top.png">-->
+    </div>
+
+    <div class="dl-log">Welcome，<span class="dl-log-user">root</span><a href="/chinapost/index.php?m=Public&a=logout" title="logoutsystem" class="dl-log-quit">Logout</a>
+    </div>
+</div>
+<div class="content">
+    <div class="dl-main-nav">
+        <div class="dl-inform"><div class="dl-inform-title"><s class="dl-inform-icon dl-up"></s></div></div>
+        <ul id="J_Nav"  class="nav-list ks-clear">
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">Seller</div></li>		<li class="nav-item dl-selected"><div class="nav-item-inner nav-order">Buyer</div></li>
+
+        </ul>
+    </div>
+    <ul id="J_NavContent" class="dl-tab-conten">
+
+    </ul>
+</div>
+<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bui-min.js"></script>
+<script type="text/javascript" src="assets/js/common/main-min.js"></script>
+<script type="text/javascript" src="assets/js/config-min.js"></script>
+<script>
+    BUI.use('common/main',function(){
+        var config = [{id:'1',menu:[{text:'Menu',items:[{id:'12',text:'Food information',href:'Node/index.html'}]}]}];
+        new PageUtil.MainPage({
+            modulesConfig : config
+        });
+    });
+</script>
+<div style="text-align:center;">
+</div>
 </body>
 </html>
