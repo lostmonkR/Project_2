@@ -13,6 +13,12 @@ const express = require('express');
 const sequelize = require('./config/connection');
 
 
+
+const Buyer = require('./model/buyer');
+const Seller = require('./model/seller');
+const Transaction = require('./model/transaction');
+
+
 //seller server
 const router = express();
 const PORT = process.env.PORT || 3001;
