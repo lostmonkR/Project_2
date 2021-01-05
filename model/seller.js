@@ -14,7 +14,7 @@ Seller.init({
   sPhoneNumber: {
     type: DataTypes.INTEGER(7),
     allow_null: false,
-    primaryKey: true,
+ 
   },
   sAddress: {
     type: DataTypes.VARCHAR(200),
@@ -35,6 +35,13 @@ Seller.init({
   sCanDeliver: {
     type: DataTypes.BOOLEAN,
     allow_null: false,
+  },
+  sId: {
+    type: DataTypes.UUID,
+    defaultValue: Sequelize.UUIDV4,
+    primaryKey: true,
+    allow_null: false,
+    autoIncrement: false,
   }
 },
   {

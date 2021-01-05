@@ -1,8 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./config/connection');
+
 
 class Buyer extends Model { }
 
 Buyer.init({
+
   bFname: {
     type: DataTypes.VARCHAR(30),
     allow_null: false,
@@ -44,3 +47,4 @@ Buyer.init({
     modelName: 'buyer',
   },
 );
+

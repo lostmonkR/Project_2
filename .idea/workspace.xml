@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2211096-d3c8-4d75-abcc-2b4c87e77233" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Project_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project_2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/buyer.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/buyer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/transaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/transaction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/withAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/withAuth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/view/layouts" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -58,7 +61,10 @@
       <updated>1608171530453</updated>
       <workItem from="1608171533102" duration="14895000" />
       <workItem from="1608390493865" duration="20000" />
-      <workItem from="1608392903165" duration="1297000" />
+      <workItem from="1608392903165" duration="9589000" />
+      <workItem from="1608570223060" duration="10586000" />
+      <workItem from="1608772916655" duration="50000" />
+      <workItem from="1608772993370" duration="3371000" />
     </task>
     <servers />
   </component>

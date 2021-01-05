@@ -1,8 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('./config/connection');
 
 class Transaction extends Model { }
 
 Transaction.init({
+
   tCost: {
     type: DataTypes.DECIMAL(10, 30),
     allow_null: false,
@@ -24,3 +26,4 @@ Transaction.init({
     modelName: 'buyer',
   },
 );
+
